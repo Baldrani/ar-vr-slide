@@ -25,7 +25,41 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Histoire</h1>
+					<h1>Sommaire</h1>
+					<a href="#/what-is-arvr">Qu’est ce que l’ar et la vr ?</a>
+					<br>
+					<a href="#/augmented-reality">Réalité augmentée</a>
+					<br>
+					<a href="#/virtual-reality">Réalité virtuelle</a>
+					<br>
+					<a href="#/hyper-reality">Hyper-réalité</a>
+					<br>
+					<a href="#/modification-consumption">Modification de notre type de consommation</a>
+					<br>
+					<a href="#/futur-pub">De nouvelles possibilités pour la publicité</a>
+					<br>
+					<a href="#/ethicality">Éthique</a>
+				</section>
+				<section id="what-is-arvr">
+					<h1>Qu’est ce que l’ar et la vr ?</h1>
+				</section>
+				<section id="augmented-reality">
+					<h1>Réalité augmentée</h1>
+				</section>
+				<section id="virtual-reality">
+					<h1>Réalité virtuelle</h1>
+				</section>
+				<section id="hyper-reality">
+					<h1>Hyper-réalité</h1>
+				</section>
+				<section id="modification-consumption">
+					<h1>Modification de notre type de consommation</h1>
+				</section>
+				<section id="futur-pub">
+					<h1>De nouvelles possibilités pour la publicité</h1>
+				</section>
+				<section id="ethicality">
+					<h1>Éthique</h1>
 				</section>
 				<!--  Test Slides -->
 				<section>Slide 1</section>
@@ -41,26 +75,18 @@
 				<section>
 					<p class="fragment grow">grow</p>
 					<p class="fragment shrink">shrink</p>
-					<p class="fragment fade-out">fade-out</p>
-					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-					<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
-					<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
-					<p class="fragment highlight-current-blue">blue only once</p>
-					<p class="fragment highlight-red">highlight-red</p>
-					<p class="fragment highlight-green">highlight-green</p>
-					<p class="fragment highlight-blue">highlight-blue</p>
 				</section>
 				<section data-transition="zoom">
 					<h2>This slide will override the presentation transition and zoom!</h2>
 				</section>
 				<section data-transition="slide">
-					<a href="#" class="navigate-down">Navigate Down</a>
+					<a href="#/test" class="navigate-down">Navigate Down</a>
 					The train goes on …
 				</section>
-				<section data-transition="slide">
+				<section data-transition="slide" id="test">
 					and on …
 				</section>
-				<section data-transition="slide-in fade-out">
+				<section data-transition="slide-in fade-out" id="some-slide">
 					and stops.
 				</section>
 				<section data-transition="fade-in slide-out">
@@ -87,6 +113,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				mouseWheel: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
