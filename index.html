@@ -24,7 +24,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section id="slide-1" data-background-video="assets/videos/magic-leaf.mp4" data-background-video-loop data-background-video-muted>Slide 1</section>
 				<section>History</section>
 				<!-- UN COMMENTAIRE -->
 				<section>Slide 2</section>
@@ -43,18 +43,6 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-
-				// Parallax background image
-				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
-
-				// Parallax background size
-				parallaxBackgroundSize: '2100px 900px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
-
-				// Number of pixels to move the parallax background per slide
-				// - Calculated automatically unless specified
-				// - Set to 0 to disable movement along an axis
-				parallaxBackgroundHorizontal: 200,
-				parallaxBackgroundVertical: 50,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },

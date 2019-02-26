@@ -11,6 +11,9 @@ html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
+#slide-1 {
+  display: none; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
