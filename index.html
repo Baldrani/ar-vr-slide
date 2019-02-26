@@ -24,8 +24,51 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section>
+					<h1>Histoire</h1>
+				</section>
+				<!--  Test Slides -->
 				<section>Slide 1</section>
-				<section>History</section>
+				<section>
+					<pre><code data-trim data-noescape>
+					(def lazy-fib
+					  (concat
+					   [0 1]
+					   <mark>((fn rfib [a b]</mark>
+							(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+					</code></pre>
+				</section>
+				<section>
+					<p class="fragment grow">grow</p>
+					<p class="fragment shrink">shrink</p>
+					<p class="fragment fade-out">fade-out</p>
+					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+					<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+					<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+					<p class="fragment highlight-current-blue">blue only once</p>
+					<p class="fragment highlight-red">highlight-red</p>
+					<p class="fragment highlight-green">highlight-green</p>
+					<p class="fragment highlight-blue">highlight-blue</p>
+				</section>
+				<section data-transition="zoom">
+					<h2>This slide will override the presentation transition and zoom!</h2>
+				</section>
+				<section data-transition="slide">
+					<a href="#" class="navigate-down">Navigate Down</a>
+					The train goes on …
+				</section>
+				<section data-transition="slide">
+					and on …
+				</section>
+				<section data-transition="slide-in fade-out">
+					and stops.
+				</section>
+				<section data-transition="fade-in slide-out">
+					(Passengers entering and leaving)
+				</section>
+				<section data-transition="slide">
+					And it starts again.
+				</section>
 				<!-- UN COMMENTAIRE -->
 				<section>Slide 2</section>
 				<section>Slide 2</section>
@@ -35,7 +78,7 @@
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
+		<script src="lib/js/head.min.js"></script>g
 		<script src="js/reveal.js"></script>
 
 		<script>
