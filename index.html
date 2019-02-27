@@ -1,131 +1,155 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/arvr.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/arvr.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section id="slide-1" data-background-video="assets/videos/magic-leaf.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.5">
-					<h3>Comment la réalité virtuelle et la réalité augmentée vont transformer notre mode de consommation ?</h3>
-				</section>
-				<section>
-					<h1>Sommaire</h1>
-					<a href="#/what-is-arvr">Qu’est ce que l’ar et la vr ?</a>
-					<br>
-					<a href="#/augmented-reality">Réalité augmentée</a>
-					<br>
-					<a href="#/virtual-reality">Réalité virtuelle</a>
-					<br>
-					<a href="#/hyper-reality">Hyper-réalité</a>
-					<br>
-					<a href="#/modification-consumption">Modification de notre type de consommation</a>
-					<br>
-					<a href="#/futur-pub">De nouvelles possibilités pour la publicité</a>
-					<br>
-					<a href="#/ethicality">Éthique</a>
-				</section>
-				<section id="what-is-arvr">
-					<h1>Qu’est ce que l’ar et la vr ?</h1>
-				</section>
-				<section id="augmented-reality">
-					<h1>Réalité augmentée</h1>
-				</section>
-				<section id="augmented-reality-history">
-					<h1>Histoire</h1>
-				</section>
-				<section id="virtual-reality">
-					<h1>Réalité virtuelle</h1>
-				</section>
-				<section id="hyper-reality">
-					<h1>Hyper-réalité</h1>
-				</section>
-				<section id="modification-consumption">
-					<h1>Modification de notre type de consommation</h1>
-				</section>
-				<section id="futur-pub">
-					<h1>De nouvelles possibilités pour la publicité</h1>
-				</section>
-				<section id="ethicality">
-					<h1>Éthique</h1>
-				</section>
-				<!--  Test Slides -->
-				<section>Slide 1</section>
-				<section>
-					<pre><code data-trim data-noescape>
-					(def lazy-fib
-					  (concat
-					   [0 1]
-					   <mark>((fn rfib [a b]</mark>
-							(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-					</code></pre>
-				</section>
-				<section>
-					<p class="fragment grow">grow</p>
-					<p class="fragment shrink">shrink</p>
-				</section>
-				<section data-transition="zoom">
-					<h2>This slide will override the presentation transition and zoom!</h2>
-				</section>
-				<section data-transition="slide">
-					<a href="#/test" class="navigate-down">Navigate Down</a>
-					The train goes on …
-				</section>
-				<section data-transition="slide" id="test">
-					and on …
-				</section>
-				<section data-transition="slide-in fade-out" id="some-slide">
-					and stops.
-				</section>
-				<section data-transition="fade-in slide-out">
-					(Passengers entering and leaving)
-				</section>
-				<section data-transition="slide">
-					And it starts again.
-				</section>
-				<!-- UN COMMENTAIRE -->
-				<section>Slide 2</section>
-				<section>Slide 2</section>
-				<section>Slide 4</section>
-				<section>Slide 5</section>
-				<section>Slide 6</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section id="slide-1" data-background-video="assets/videos/magic-leaf.mp4" data-background-video-loop
+                 data-background-video-muted data-background-opacity="0.5">
+            <h3>Comment la réalité virtuelle et la réalité augmentée vont transformer notre mode de consommation ?</h3>
+        </section>
+        <section>
+            <h1>Sommaire</h1>
+            <a href="#/what-is-arvr">Qu’est ce que l’ar et la vr ?</a>
+            <br>
+            <a href="#/augmented-reality">Réalité augmentée</a>
+            <br>
+            <a href="#/virtual-reality">Réalité virtuelle</a>
+            <br>
+            <a href="#/hyper-reality">Hyper-réalité</a>
+            <br>
+            <a href="#/modification-consumption">Modification de notre type de consommation</a>
+            <br>
+            <a href="#/futur-pub">De nouvelles possibilités pour la publicité</a>
+            <br>
+            <a href="#/ethicality">Éthique</a>
+        </section>
+        <section id="what-is-arvr">
+            <h1>Qu’est ce que l’ar et la vr ?</h1>
+        </section>
+        <section id="augmented-reality">
+            <h1>Réalité augmentée</h1>
+        </section>
+        <section id="augmented-reality-history">
+            <h1>Histoire</h1>
+        </section>
+        <section id="virtual-reality">
+            <h1>Réalité virtuelle</h1>
+        </section>
+        <section id="hyper-reality">
+            <h1>Hyper-réalité</h1>
+        </section>
+        <section id="modification-consumption">
+            <h1>Modification de notre type de consommation</h1>
+        </section>
+        <section id="futur-pub">
+            <h1>De nouvelles possibilités pour la publicité</h1>
+        </section>
+        <section id="ethicality">
+            <section data-transition="convex" data-transition-speed="slow">
+                <h1>Éthique</h1>
 
-		<script src="lib/js/head.min.js"></script>g
-		<script src="js/reveal.js"></script>
+            </section>
+            <section data-transition="convex" data-transition-speed="slow">
+                <h2>Éthique</h2>
+                <p class="fragment fade-up">La collecte des données</p>
+                <p class="fragment fade-up">Les dérives de la réalité augmentée</p>
+                <p class="fragment fade-up">Les dérives de la réalité virtuelle</p>
+            </section>
+            <section data-transition="convex" data-transition-speed="slow">
+                <h1>La collecte des données</h1>
+            </section>
+            <section data-transition="convex" data-transition-speed="slow">
+                <h3>La collecte des données</h3>
+                <p>bla</p>
+            </section>
+        </section>
+        <!--  Test Slides -->
+        <section>Slide 1</section>
+        <section>
+            <pre>
+                <code data-trim data-noescape>
+            (def lazy-fib
+              (concat
+               [0 1]
+               <mark>((fn rfib [a b]</mark>
+                    (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+                </code>
+            </pre>
+        </section>
+        <section>
+            <p class="fragment grow">grow</p>
+            <p class="fragment shrink">shrink</p>
+        </section>
+        <section data-transition="zoom">
+            <h2>This slide will override the presentation transition and zoom!</h2>
+        </section>
+        <section data-transition="slide">
+            <a href="#/test" class="navigate-down">Navigate Down</a>
+            The train goes on …
+        </section>
+        <section data-transition="slide" id="test">
+            and on …
+        </section>
+        <section data-transition="slide-in fade-out" id="some-slide">
+            and stops.
+        </section>
+        <section data-transition="fade-in slide-out">
+            (Passengers entering and leaving)
+        </section>
+        <section data-transition="slide">
+            And it starts again.
+        </section>
+        <!-- UN COMMENTAIRE -->
+        <section>Slide 2</section>
+        <section>Slide 2</section>
+        <section>Slide 4</section>
+        <section>Slide 5</section>
+        <section>Slide 6</section>
+    </div>
+</div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				mouseWheel: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script src="lib/js/head.min.js"></script>
+g
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        mouseWheel: true,
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
