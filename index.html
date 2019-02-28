@@ -115,7 +115,7 @@
                     <section data-transition="convex" data-transition-speed="slow">
                         <h1>Éthique</h1>
 
-                        <script src="lib/js/head.min.js"></script>g
+                        <script src="lib/js/head.min.js"></script>
                         <script src="js/reveal.js"></script>
                     </section>
                     <section data-transition="convex" data-transition-speed="slow">
@@ -129,8 +129,41 @@
                     </section>
                     <section data-transition="convex" data-transition-speed="slow">
                         <h3>La collecte des données</h3>
-                        <p>bla</p>
+						<div class="row">
+							<div class="col-6 position-relative">
+								<img class="fragment fade-up" src="assets/images/ethique/cambridge.jpeg" data-fragment-index="1">
+								<img class="fragment fade-down position-absolute" style="left: 10rem; top: 1rem;" src="assets/images/ethique/kogan.jpg" data-fragment-index="2">
+								<img class="fragment fade-left position-absolute" style="left: 7rem; top: 2rem;" src="assets/images/ethique/trump.jpeg" data-fragment-index="3">
+							</div>
+							<div class="col-6 row align-items-center">
+								<ul>
+									<li class="fragment fade-left" data-fragment-index="1">Cambridge Analytica</li>
+									<li class="fragment fade-left" data-fragment-index="2">Aleksandr Kogan</li>
+									<li class="fragment fade-left" data-fragment-index="3">Optimisation de l'audience des publicités en ligne</li>
+								</ul>
+							</div>
+						</div>
                     </section>
+					<section data-transition="convex" data-transition-speed="slow">
+						<h1>Les dérives de la réalité augmentée</h1>
+					</section>
+					<section data-transition="convex" data-transition-speed="slow">
+						<h3>Les dérives de la réalité augmentée</h3>
+						<div class="row">
+							<div class="col-6 position-relative">
+								<img class="fragment fade-up" src="assets/images/ethique/cambridge.jpeg" data-fragment-index="1">
+								<video class="fragment fade-down position-absolute" style="left: 0rem; top: 2rem;" muted loop src="assets/videos/ethique/ar-ads.mp4"  data-fragment-index="2"></video>
+								<img class="fragment fade-left position-absolute" style="left: 0rem; top: 2rem;" src="assets/images/ethique/trump.jpeg" data-fragment-index="3">
+							</div>
+							<div class="col-6 row align-items-center">
+								<ul>
+									<li class="fragment fade-left" data-fragment-index="1">Cambridge Analytica</li>
+									<li class="fragment fade-left" data-fragment-index="2">Aleksandr Kogan</li>
+									<li class="fragment fade-left" data-fragment-index="3">Optimisation de l'audience des publicités en ligne</li>
+								</ul>
+							</div>
+						</div>
+					</section>
                 </section>
 				<!--  Test Slides -->
 				<section>Slide 1</section>
@@ -203,6 +236,22 @@
 				if("display" in event.fragment.dataset)
 				{
 					event.fragment.style.display = "block"
+				}
+			} );
+
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				var video = event.fragment;
+				if( video.tagName === 'VIDEO' ) {;
+					video.play()
+				}
+			} );
+
+			Reveal.addEventListener( 'fragmenthidden', function( event ) {
+				console.log(event.fragment)
+				console.log(event.fragment.tagName)
+				var video = event.fragment;
+				if( video.tagName === 'VIDEO' ) {
+					video.pause();
 				}
 			} );
 		</script>
