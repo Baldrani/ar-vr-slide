@@ -47,17 +47,18 @@
 					<section>
 						<h1>Qu’est ce que l’ar et la vr ?</h1>
 					</section>
-					<section class="position-relative">
-						<img class="fragment fade-up" src="assets/images/introarvr/ar1.jpeg">
+					<section class="position-relative" data-transition="zoom">
+						<img class="fade-up" src="assets/images/introarvr/ar1.jpeg">
 						<img class="fragment fade-down position-absolute" style="left: 0; top: 2rem" src="assets/images/introarvr/ar2.jpg">
 						<img class="fragment fade-left position-absolute" style="left: 2rem; top: 4rem"  src="assets/images/introarvr/ar3.jpg">
 						<img class="fragment fade-right position-absolute" style="left: 1rem; top: 6rem" src="assets/images/introarvr/ar4.png">
+						<h1 class="fragment fade-down position-absolute" style="top: 12rem;color: #000;text-shadow: #fff 1px 0 10px;">Réalité augmentée / AR</h1>
 					</section>
 					<section>
 
 					</section>
 				</section>
-				<section id="augmented-reality">
+				<section id="augmented-reality" data-transition="zoom">
 					<h1>Réalité augmentée</h1>
 				</section>
 				<section id="augmented-reality-history">
@@ -66,15 +67,15 @@
 				<section>
 					<section data-transition="convex" data-transition-speed="slow">
 						<div class="row">
-							<div class="col-6 ">
-								<img src="assets/images/sensoram.jpg" class="position-absolute">
-								<img class="fragment fade-up" src="assets/images/sensorama-2.png" data-fragment-index="4">
+							<div class="col-6 position-relative">
+								<img src="assets/images/sensoram.jpg">
+								<img class="fragment fade-up position-absolute" style="left: 0; top: 0;" src="assets/images/sensorama-2.png" data-fragment-index="4">
 							</div>
 							<div class="col-6 row align-items-center">
 								<ul>
-									<li class="fragment" data-fragment-index="1">Morton Heilig</li>
-									<li class="fragment" data-fragment-index="2">1957</li>
-									<li class="fragment" data-fragment-index="3">Théâtre d’expérience</li>
+									<li class="fragment fade-up" data-display data-fragment-index="1">Morton Heilig</li>
+									<li class="fragment fade-up" data-display data-fragment-index="2">1957</li>
+									<li class="fragment fade-up" data-display data-fragment-index="3">Théâtre d’expérience</li>
 								</ul>
 							</div>
 						</div>
@@ -160,8 +161,20 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
-
-
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				event.currentSlide.querySelectorAll('.fragment').forEach((fragment) => {
+					if("display" in fragment.dataset)
+					{
+						fragment.style.display = 'none'
+					}
+				})
+			} );
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				if("display" in event.fragment.dataset)
+				{
+					event.fragment.style.display = "block"
+				}
+			} );
 		</script>
 	</body>
 </html>
