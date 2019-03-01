@@ -55,9 +55,16 @@
 						<img class="fragment fade-right position-absolute" style="left: 1rem; top: 6rem" src="assets/images/introarvr/ar4.png">
 						<h1 class="fragment fade-down position-absolute" style="top: 12rem;color: #000;text-shadow: #fff 1px 0 10px;">Réalité augmentée / AR<br>Visuelle</h1>
 					</section>
-					<section data-markdown>
+					<section data-markdown> <!-- TODO Test with code sample (pre blabla) -->
+						<textarea data-template>
+							## Page title
+
+							A paragraph with some text and a [link](http://hakim.se).
+						</textarea>
 						<script type="text/template">
 							<!-- .slide: data-background="#ff0000" -->
+							- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
 						</script>
 						<p><i><b>réalité</b> : Caractère de ce qui est réel, de ce qui existe effectivement. Qui existe en fait, par opposition à ce qui est imaginé, rêvé, fictif.</i></p>
 						<p><i><b>augmentée</b> : Rendre plus grand, plus considérable par addition d’une chose de même nature.</i></p>
@@ -347,6 +354,9 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				markdown: {
+					smartypants: true
+				},
 				transition: 'slide',
 				mouseWheel: true,
 				dependencies: [
