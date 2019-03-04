@@ -7250,7 +7250,7 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
-.reveal section img, .reveal section video {
+.reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
   border: 4px solid #fff;
@@ -7294,3 +7294,8 @@ body {
 @media print {
   .backgrounds {
     background-color: #222; } }
+
+.transparentImage {
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important; }
