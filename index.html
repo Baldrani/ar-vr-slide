@@ -46,6 +46,8 @@
 					<a href="#/futur-pub">De nouvelles possibilités pour la publicité</a>
 					<br>
 					<a href="#/ethicality">Éthique</a>
+					<br>
+					<a href="#/conclusion">Conclusion</a>
 				</section>
 				<section id="what-is-arvr" data-background-image="assets/images/wallpapers/art_night_city_future_fantasy_1920x1080.jpg" data-background-opacity="0.5">
 					<section>
@@ -356,7 +358,7 @@
 						</div>
 					</section>
 				</section>
-                <section id="ethicality">
+                <section id="ethicality" data-background-image="assets/images/wallpapers/ethique.jpg" data-background-opacity="0.3">
                     <section data-transition="convex" data-transition-speed="slow">
                         <h1>Éthique</h1>
                     </section>
@@ -400,7 +402,6 @@
 								<img class="fragment fade-down position-absolute" style="left: -2rem; top: 2rem;" src="assets/images/ethique/cinetose.jpg" data-fragment-index="2">
 								<img class="fragment fade-left position-absolute" style="left: 0rem; top: 3rem;" src="assets/images/ethique/grid.jpg" data-fragment-index="5">
 								<img class="fragment fade-right position-absolute" style="left: 4rem; top: -2rem;" src="assets/images/ethique/microtransaction.png" data-fragment-index="6">
-								<img src="assets/images/ethique/slave.png" class="fragment fade position-absolute" style="top: 0%; left: 25%; width: 100%; z-index: 2;" alt="" data-fragment-index="7">
 							</div>
 							<div class="col-6 row align-items-center">
 								<ul>
@@ -414,8 +415,14 @@
 								</ul>
 							</div>
 						</div>
+						<img src="assets/images/ethique/slave.png" class="fragment fade-down position-absolute" style="top: 25%; left: 0%; z-index: 2;" alt="" data-fragment-index="7">
 					</section>
                 </section>
+				<section id="conclusion" data-background-image="assets/images/wallpapers/ethique.jpg" data-background-opacity="0.3">
+				</section>
+				<section>
+					
+				</section>
 			</div>
 		</div>
 
@@ -446,6 +453,13 @@
 						fragment.style.display = 'none'
 					}
 				})
+
+				let video = document.querySelector(".backgrounds .future video");
+
+				if (video != null) {
+					video.play()
+				}
+
 			} );
 			Reveal.addEventListener( 'fragmentshown', function( event ) {
 				if("display" in event.fragment.dataset)
