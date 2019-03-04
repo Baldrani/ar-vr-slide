@@ -7299,3 +7299,16 @@ body {
   border: 0 !important;
   background: none !important;
   box-shadow: none !important; }
+
+.chart-color {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-left: 35px !important;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.chart-color + p {
+  margin: 0 5px !important;
+  font-size: 50%;
+}
