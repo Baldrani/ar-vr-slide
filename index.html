@@ -58,9 +58,9 @@
 					</section>
 					<section class="position-relative">
 						<h1 class="position-relative" style="top: 17rem;color: #000;text-shadow: #fff 1px 0 10px;">Réalité augmentée / AR</h1>
-						<img class="fragment fade-up position-absolute" src="assets/images/introarvr/ar1.jpeg">
-						<img class="fragment fade-down position-absolute" style="left: 0; top: 2rem" src="assets/images/introarvr/ar2.jpg">
-						<img class="fragment fade-left position-absolute" style="left: 53%; top: 3%"  src="assets/images/introarvr/ar3.jpg">
+						<img class="fragment fade-up position-absolute" data-fragment-index="1" src="assets/images/introarvr/ar1.jpeg">
+						<img class="fragment fade-down position-absolute" data-fragment-index="2" style="left: 0; top: 2rem" src="assets/images/introarvr/ar2.jpg">
+						<img class="fragment fade-left position-absolute" data-fragment-index="2" style="left: 53%; top: 3%"  src="assets/images/introarvr/ar3.jpg">
 						<img class="fragment fade-right position-absolute" style="left: -3%; top: 83%" src="assets/images/introarvr/ar4.png">
 						<div class="fragment d-flex align-items-center" style="width: 90%;margin: 20px auto;text-align: left;font-size: 0.55em;font-family: monospace;line-height: 1.2em;word-wrap: break-word;box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);position: absolute;top: 45%;background: #3f3f3f;color: #dcdcdc;height: 300px;padding: 2rem;left: calc(50% - 425px);">
 							<h4 style="text-align: center;line-height: 5rem;font-size: 2rem;">La réalitée augmentée peut se définir comme une interface entre des données virtuelles et le monde réel.</h4>
@@ -73,10 +73,10 @@
 					</section>
 					<section class="position-relative" data-transition="concave">
 						<h1 class="position-relative" style="top: 17rem;color: #000;text-shadow: #fff 1px 0 10px;">Réalité virtuelle / VR</h1>
-						<img class="fragment fade-up position-absolute" src="assets/images/introarvr/vr1.jpg">
-						<img class="fragment fade-down position-absolute" style="left: 0; top: 2rem" src="assets/images/introarvr/vr2.jpg">
-						<img class="fragment fade-left position-absolute" style="left: 47%; top: 17%;"  src="assets/images/introarvr/vr3.jpg">
-						<img class="fragment fade-left position-absolute" style="left: -5%; top: 100%;"  src="assets/images/introarvr/vr4.jpg">
+						<img class="fragment fade-up position-absolute" data-fragment-index="1" src="assets/images/introarvr/vr1.jpg">
+						<img class="fragment fade-down position-absolute" data-fragment-index="2" style="left: 0; top: 2rem" src="assets/images/introarvr/vr2.jpg">
+						<img class="fragment fade-left position-absolute" data-fragment-index="1" style="left: 47%; top: 17%;"  src="assets/images/introarvr/vr3.jpg">
+						<img class="fragment fade-left position-absolute" data-fragment-index="2" style="left: -5%; top: 100%;"  src="assets/images/introarvr/vr4.jpg">
 						<div class="fragment d-flex align-items-center" style="width: 90%;margin: 20px auto;text-align: left;font-size: 0.55em;font-family: monospace;line-height: 1.2em;word-wrap: break-word;box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);position: absolute;top: 50%;background: #3f3f3f;color: #dcdcdc;padding: 2rem;left: calc(50% - 425px);">
 							<h4 style="text-align: center;line-height: 5rem;font-size: 2rem;">La réalité virtuelle est un ensemble de techniques et systèmes qui procurent à l’homme le sentiment de pénétrer dans des univers synthétiques créés sur ordinateur.</h4>
 						</div>
@@ -124,9 +124,9 @@
 							</div>
 							<div class="col-6 row align-items-center">
 								<ul>
-									<li class="fragment fade-up">Ivan Sutherland</li>
-									<li class="fragment fade-up">The Sword of Damocles</li>
-									<li class="fragment fade-up">Premier casque de système d'affichage</li>
+									<li class="fragment fade-up" data-fragment-index="1">Ivan Sutherland</li>
+									<li class="fragment fade-up" data-fragment-index="1">The Sword of Damocles</li>
+									<li class="fragment fade-up" data-fragment-index="1">Premier casque de système d'affichage</li>
 								</ul>
 							</div>
 						</div>
@@ -188,7 +188,7 @@
 									<li>Kickstarter en 2012 (2 millions US $)</li>
 								</div>
 								<div class="col">
-									<li>2014 Facebook rachat 2 milliard US $</li>
+									<li class="fragment">2014 Facebook rachat 2 milliard US $</li>
 								</div>
 							</ul>
 						</div>
@@ -459,7 +459,7 @@
 					</section>
 				</section>
 				<section data-background-opacity="0.5" data-background-image="assets/images/conclusion/rcjrd7eLi.jpg">
-					<h1>Merci de nous avoir écouté</h1>
+					<h1>Merci</h1>
 				</section>
 			</div>
 		</div>
@@ -523,7 +523,6 @@
 			} );
 
 			window.addEventListener("mousedown", handleClick, false);
-			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
 
 			function handleClick(e) {
 				e.preventDefault();
